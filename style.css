@@ -49,7 +49,8 @@ h2 {
   justify-content: space-evenly;
 }
 
-.btn {
+.btn-home,
+.btn-guest {
   height: 25px;
   width: 25px;
   background-color: #1b244a;
