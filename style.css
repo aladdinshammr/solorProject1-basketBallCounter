@@ -70,3 +70,13 @@ h2 {
   font-size: 16px;
   border-radius: 3px;
 }
+
+#team-h,
+#team-g {
+  padding: 16px;
+  border-radius: 3px;
+}
+
+.highlighted {
+  background-color: rgb(249, 79, 109, 0.5);
+}

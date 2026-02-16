@@ -12,6 +12,9 @@ const guestBtnsArray = Array.from(guestBtns);
 
 const newGameBtn = document.getElementById("new-game");
 
+const teamHContainer = document.getElementById("team-h");
+const teamGContainer = document.getElementById("team-g");
+
 let homeTeam = 0;
 let guestTeam = 0;
 
@@ -32,6 +35,16 @@ guestBtnsArray.forEach((btn) => {
 function render() {
   labelHome.textContent = homeTeam;
   labelGuest.textContent = guestTeam;
+  if (homeTeam === guestTeam) {
+    teamHContainer.classList.remove("highlighted");
+    teamGContainer.classList.remove("highlighted");
+  } else if (homeTeam > guestTeam) {
+    teamHContainer.classList.add("highlighted");
+    teamGContainer.classList.remove("highlighted");
+  } else if (guestTeam > homeTeam) {
+    teamGContainer.classList.add("highlighted");
+    teamHContainer.classList.remove("highlighted");
+  }
 }
 
 newGameBtn.addEventListener("click", function () {
