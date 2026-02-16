@@ -21,16 +21,16 @@ body {
   max-height: 400;
   margin: 32px auto;
   padding: 36px 0px;
-  border: 1px solid white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 h2 {
   color: white;
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
+  margin-bottom: 16px;
 }
 
 .label {
@@ -41,4 +41,21 @@ h2 {
   width: 120px;
   text-align: center;
   background-color: #080001;
+  margin-bottom: 16px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  height: 25px;
+  width: 25px;
+  background-color: #1b244a;
+  color: #9aabd8;
+  font-family: "timer";
+  padding: 2px;
+  border: 1px solid #9aabd8;
+  border-radius: 3px;
 }
